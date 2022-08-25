@@ -1,0 +1,29 @@
+{% extends 'products/base.html' %}
+
+
+{% block css %}
+    <link href="/static/css/index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mt-5">Meanwhile Store</h1>
+                    <p>
+                        New looks and top brands in Meanwhile Store.
+                        Free worldwide shipping! Outlet: -70% own brand. -20% for new buyers.
+                    </p>
+                    <button id="start-purchase-btn" type="button" class="btn btn-lg">
+                        <a id="start-purchase-link" href="{% url 'products:index' %}">
+                            Start shopping
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
